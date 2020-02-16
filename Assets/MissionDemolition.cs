@@ -54,7 +54,7 @@ public class MissionDemolition : MonoBehaviour
         castle.transform.position = castlePos;
         shotsTaken = 0;
 
-        SwitchView("wShow Both")
+        SwitchView("Show Both")
 ;
         ProjectileLine.S.Clear();
 
@@ -112,7 +112,7 @@ public class MissionDemolition : MonoBehaviour
                 FollowCam.POI = null;
                 uitButton.text = "Show Castle";
                 break;
-            case "ShowCastle":
+            case "Show Castle":
                 FollowCam.POI = S.castle;
                 uitButton.text = "Show Both";
                 break;
